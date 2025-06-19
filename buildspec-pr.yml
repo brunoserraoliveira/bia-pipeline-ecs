@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing node and npm"
+      - curl -sL https://rpm.nodesource.com/setup_20.x | sudo bash -  
+      - sudo yum install -y nodejs  
+  build:
+    commands:
+      - echo "Installing dependencies"
+      - npm install --loglevel=error
+      - REACT_APP_API_URL=http://http://bia-alb-1592240893.us-east-1.elb.amazonaws.com SKIP_PREFLIGHT_CHECK=true npm run build --prefix client
+      - echo "Rodando testes unitários"
+      - npm test
+      
+
+                                        
