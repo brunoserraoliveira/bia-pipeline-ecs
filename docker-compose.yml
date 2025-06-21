@@ -7,12 +7,12 @@ services:
     links:
       - database
     environment:
-      DB_USER: postgres
-      DB_PWD: postgresBruno
+    # DB_USER: postgres
+    # DB_PWD: postgresBruno
       DB_HOST: bia.c7acgqwmkuu9.us-east-1.rds.amazonaws.com
       DB_PORT: 5432
       ## NAO PRECISA NO BOOTCAMP DAQUI PRA BAIXO ##
-      DB_SECRET_NAME: rds!db-2f67dbed-a20b-4529-8e07-3000575be9fb
+      DB_SECRET_NAME: rds!db-4454e648-8d92-48e8-bd20-468fd209bdd5
       DB_REGION: us-east-1
       # AWS_ACCESS_KEY_ID: 
       # AWS_SECRET_ACCESS_KEY:
