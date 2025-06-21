@@ -3,7 +3,7 @@ services:
     build: .
     container_name: bia
     ports:
-      - 3001:8080
+      - 80:8080
     links:
       - database
     environment:
@@ -12,11 +12,11 @@ services:
       DB_HOST: bia.c7acgqwmkuu9.us-east-1.rds.amazonaws.com
       DB_PORT: 5432
       ## NAO PRECISA NO BOOTCAMP DAQUI PRA BAIXO ##
-      # DB_SECRET_NAME: 
-      # DB_REGION: 
+      DB_SECRET_NAME: rds!db-2f67dbed-a20b-4529-8e07-3000575be9fb
+      DB_REGION: us-east-1
       # AWS_ACCESS_KEY_ID: 
       # AWS_SECRET_ACCESS_KEY:
-      # DEBUG_SECRET: 
+      DEBUG_SECRET: true
       # IS_LOCAL: true 
     # healthcheck:
     #   test: ["CMD", "curl", "-f", "http://localhost:8080/api/versao"]
