@@ -20,7 +20,7 @@ const Header = ({ title, onAdd, showAdd }) => {
 };
 
 Header.defaultProps = {
-  title: "BIA 2025 V-4 - Bruno Oliveira - CI/CD - ECS",
+  title: "BIA 2025 V-6 - Bruno Oliveira - CI/CD - ECS",
 };
 
 export default Header;
